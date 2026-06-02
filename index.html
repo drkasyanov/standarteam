@@ -7,7 +7,7 @@
 <meta name="description" content="Проектное агентство Standarteam. Строим системы стандартов, менеджмента и франчайзинга — как в Додо Пицце.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@600;700&family=Lora:wght@500;600;700&family=Source+Sans+3:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
   :root{
     --bg:#FAF5EB;
@@ -63,10 +63,10 @@
 
   /* ---------- BUTTONS ---------- */
   .btn{
-    display:inline-flex;align-items:center;gap:9px;
+    display:inline-flex;align-items:center;justify-content:center;gap:9px;
     background:var(--accent);color:#FBF6EC;
     font-family:'Source Sans 3',sans-serif;font-weight:700;font-size:16px;
-    padding:15px 32px;border-radius:8px;
+    padding:15px 32px;border-radius:8px;white-space:nowrap;
     transition:transform .2s,background .2s,box-shadow .2s;
     box-shadow:0 8px 22px rgba(92,58,30,.18);
   }
@@ -123,8 +123,8 @@
   .hero .pill{
     display:inline-flex;align-items:center;gap:8px;
     border:1px solid var(--line);background:#fff;border-radius:50px;
-    padding:7px 18px;font-size:12.5px;color:var(--muted);
-    font-weight:600;margin-bottom:24px;letter-spacing:.06em;text-transform:uppercase;
+    padding:7px 18px;font-size:12.5px;color:var(--accent);
+    font-weight:700;margin-bottom:24px;letter-spacing:.06em;text-transform:uppercase;
   }
   .hero .pill b{color:var(--accent);font-weight:700}
 
@@ -640,8 +640,8 @@
     font-size:9px;color:#444;
   }
   .rec-doc-sign .sig{
-    font-family:'Brush Script MT',cursive;
-    font-size:22px;color:#1a3a8a;line-height:1;margin:6px 0 4px;
+    font-family:'Caveat','Brush Script MT',cursive;
+    font-size:30px;font-weight:700;color:#1a3a8a;line-height:1;margin:4px 0 2px;
   }
   .rec-text{}
   .rec-text h3{
@@ -728,6 +728,7 @@
     .sec{padding:74px 0}
     .hero{padding:78px 0 88px}
     .svc-grid{grid-template-columns:1fr}
+    .why-grid{grid-template-columns:1fr}
     .team-grid{grid-template-columns:1fr;max-width:420px}
     .case-grid{grid-template-columns:1fr}
     .cf-left,.cf-right{padding:34px 28px}
@@ -780,7 +781,7 @@
   <div class="wrap">
     <div class="hero-top">
       <div class="hero-text reveal">
-        <span class="pill">Проектное агентство · <b>опыт Додо Пиццы</b></span>
+        <span class="pill">Проектное агентство <b>опыт Додо Пиццы</b></span>
         <h1>Строим стандарты и франчайзинг, на которых Додо выросла <em>с 3 до 1500+ точек</em></h1>
         <p>Для предпринимателей, которые хотят расти, но упёрлись в операционку, нестабильное качество на новых точках или сырой франчайзинг.</p>
         <a href="https://t.me/drkasianov" target="_blank" rel="noopener" class="btn">Обсудить проект →</a>
@@ -1160,7 +1161,7 @@
       </div>
       <div class="qcard">
         <span class="qmark">“</span>
-        <p class="qtext">Кратко, но показывает, что действительно всё последовательно и понятно. Всё настолько подробно описано — прям как для детей.</p>
+        <p class="qtext">Всё настолько подробно описано — прям как для детей.</p>
         <div class="qauthor">
           <img src="data:image/jpeg;base64,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" alt="СушиСелл">
           <div class="qmeta">
@@ -1239,7 +1240,6 @@
       <div class="sec-head">
         <span class="eyebrow">Наши клиенты</span>
         <h2>С кем мы работали</h2>
-        <p>Десятки компаний — от локальных бизнесов до международных сетей с сотнями точек.</p>
       </div>
       <div class="car-nav">
         <button class="car-btn" id="carPrev" aria-label="Назад">‹</button>
@@ -1368,7 +1368,7 @@
     <div class="sec-head center reveal">
       <span class="eyebrow">Команда под проект</span>
       <h2>Собираем команду экспертов с опытом успешных сетей</h2>
-      <p>Не работаем по шаблону. Под каждый проект собираем экспертов с релевантным опытом — людей, которые уже строили стандарты, обучение и франчайзинг в крупных и быстрорастущих сетях.</p>
+      <p>Под каждый проект собираем экспертов с релевантным опытом — людей, которые уже строили стандарты, обучение и франчайзинг в крупных и быстрорастущих сетях.</p>
     </div>
     <div class="team-intro reveal">
       <h3>Эксперты, с которыми мы работаем, выросли в этих компаниях:</h3>
@@ -1544,7 +1544,6 @@
       <a href="https://youtu.be/Rj0axJlpo4Y" target="_blank" rel="noopener">Подкаст «Стандарты Додо»</a>
       <a href="https://t.me/doctorkasyanov" target="_blank" rel="noopener">Телеграм-канал Александра</a>
     </div>
-    <div class="copy">Standarteam · Системы стандартов, менеджмента и франчайзинга</div>
   </div>
 </footer>
 
