@@ -446,14 +446,14 @@
   .car-nav{display:flex;gap:10px;flex-shrink:0}
   .car-btn{
     width:46px;height:46px;border-radius:50%;
-    background:var(--card);border:1px solid var(--line);
+    background:var(--accent);border:1px solid var(--accent);
     cursor:pointer;display:flex;align-items:center;justify-content:center;
-    color:var(--accent);font-size:22px;
-    transition:background .2s,border-color .2s,color .2s,transform .2s;
+    color:#fff;font-size:28px;font-weight:700;line-height:1;
+    transition:background .2s,border-color .2s;
   }
-  .car-btn:hover{background:var(--accent);border-color:var(--accent);color:#FBF6EC}
-  .car-btn:disabled{opacity:.35;cursor:not-allowed}
-  .car-btn:disabled:hover{background:var(--card);border-color:var(--line);color:var(--accent)}
+  .car-btn:hover:not(:disabled){background:var(--accent-deep);border-color:var(--accent-deep)}
+  .car-btn:focus-visible{outline:2px solid var(--accent-deep);outline-offset:3px}
+  .car-btn:disabled{background:#9F8872;border-color:#9F8872;cursor:not-allowed}
   .car-track{
     display:flex;gap:18px;overflow-x:auto;
     scroll-snap-type:x mandatory;scroll-behavior:smooth;
